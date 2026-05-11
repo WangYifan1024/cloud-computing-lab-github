@@ -2,36 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cloud Computing Lab </title>
+    <title>Cloud Computing Lab</title>
+
     <style>
-        <style>
-    body { 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        text-align: center; 
-        padding-top: 50px; 
-        background-color: #f4f4f9;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #333333;
+            text-align: center;
+        }
 
-    h1 {
-        color: #333333;
-        font-size: 36px;
-    }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
 
-    .status { 
-        color: #007bff; 
-        font-weight: bold; 
-        font-size: 20px;
-    }
-</style>
-        .status { color: green; font-weight: bold; }
+        h1 {
+            color: #1f2937;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #555555;
+            margin-bottom: 25px;
+        }
+
+        .lab-image {
+            width: 260px;
+            max-width: 80%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            color: #ffffff;
+            background-color: #16a34a;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 999px;
+        }
+
+        .info-box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            border-left: 5px solid #007bff;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .info-box p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin: 8px 0;
+        }
+
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #dddddd;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #777777;
+            font-size: 14px;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Cloud-Native Deployment Success!</h1>
-    <p>This site was deployed using <b>GitHub Actions</b>.</p>
-    <div class="status">● Site Status: Live</div>
-    <hr>
-    <p>Student Name: Wang Yifan</p>
-    <p>Current Cloud Provider: GitHub (Microsoft Azure Infrastructure)</p>
+    <div class="container">
+        <h1>Cloud-Native Deployment Success!</h1>
+
+        <p class="subtitle">
+            This website was deployed automatically using 
+            <b>GitHub Actions</b> and <b>GitHub Pages</b>.
+        </p>
+
+        <img class="lab-image" src="CloudComputing.png" alt="Cloud Computing Image">
+
+        <div class="status">● Site Status: Live</div>
+
+        <hr>
+
+        <div class="info-box">
+            <p><span class="highlight">Student Name:</span> Wang Yifan</p>
+            <p><span class="highlight">Experiment Topic:</span> Cloud-Native Automated Deployment</p>
+            <p><span class="highlight">Current Cloud Provider:</span> GitHub Pages</p>
+            <p><span class="highlight">Automation Tool:</span> GitHub Actions</p>
+            <p><span class="highlight">Deployment Model:</span> Platform as a Service, PaaS</p>
+        </div>
+
+        <footer>
+            Cloud Computing Lab | Automated Deployment Experiment
+        </footer>
+    </div>
 </body>
 </html>
